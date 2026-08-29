@@ -78,6 +78,8 @@ public class Duke extends Application{
         userInput.setOnAction(event -> {
             handleUserInput();
         });
+
+        dialogContainer.heightProperty().addListener((observable) -> scrollPane.setVvalue(1.0));
     }
 
     private void handleUserInput() {
