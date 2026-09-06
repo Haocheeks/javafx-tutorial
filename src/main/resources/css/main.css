@@ -1,33 +1,37 @@
 .root {
-    main-color: rgb(237, 255, 242);       /* Create a looked-up color called "main-color" within root. */
+    main-color: #dfe6ec;       /* Create a looked-up color called "main-color" within root. */
+    accent-color: #3390ec;     /* Looked-up color for the send button. */
     -fx-background-color: main-color;
     -fx-background-image: url("../images/clay-banks-hwLAI5lRhdM-unsplash.jpg");
-    -fx-background-size: 400px 600px;
-    -fx-background-repeat: round;
+    -fx-background-size: cover;
 }
 
 .text-field {
-    -fx-background-color: #d9ffe2;
-    -fx-font: 20px "Arial";
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 18px;
+    -fx-border-radius: 18px;
+    -fx-font: 15px "Helvetica Neue";
+    -fx-text-fill: #000000;
+    -fx-padding: 8px 14px 8px 14px;
 }
 
 .button {
-    -fx-background-color: mediumspringgreen;
-    -fx-font: italic bold 16px "Arial";
+    -fx-background-color: accent-color;
+    -fx-background-radius: 18px;
+    -fx-text-fill: white;
+    -fx-font: bold 14px "Helvetica Neue";
 }
 
 .button:hover {
-    -fx-background-color:cyan;
-    -fx-font-size: 18px;
+    -fx-background-color: #4fa9f0;
 }
 
 .button:pressed {
-    -fx-background-color:orange;
-    -fx-font-size: 20px;
+    -fx-background-color: #2b7cd3;
 }
 
 .scroll-pane {
-    -fx-background-color: rgba(0,0,0,.5);
+    -fx-background-color: rgba(255, 255, 255, 0.35);
 }
 
 .scroll-pane .viewport {
@@ -35,12 +39,12 @@
 }
 
 .scroll-bar {
-    -fx-font-size: 10px;  /* Change width of scroll bar. */
-    -fx-background-color: main-color;
+    -fx-font-size: 9px;        /* Change width of scroll bar. */
+    -fx-background-color: transparent;
 }
 
 .scroll-bar .thumb {
-    -fx-background-color: #ff9cb4;
+    -fx-background-color: rgba(0, 0, 0, 0.20);
     -fx-background-radius: 1em;
 }
 
@@ -50,4 +54,3 @@
     -fx-pref-height: 0;
     -fx-opacity: 0;
 }
-
